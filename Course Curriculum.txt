@@ -1,1 +1,21 @@
-hello word
+///               DATA STRUCTURES USING JAVA                ///
+
+It will be applicable for  
+Btech
+MCA
+BCA
+MTech
+placemet preparation 
+and competitive programming
+
+
+Lessons to be learned
+
+1. Array
+2. LinkList
+3. Stack
+4. Queue
+5. Tree
+6. Graph
+7. Hashing
+8. Heap

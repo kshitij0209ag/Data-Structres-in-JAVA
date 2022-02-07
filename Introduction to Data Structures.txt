@@ -1,0 +1,38 @@
+# Definition :- DS describes you, how to store the data in memry so that computer can perform operations 
+on data efficiently.
+
+# Types of operations:-
+insert
+delete
+display
+update
+
+
+# How to measure efficiencey:-
+1. Time Complexity:- it means how much time is taken to perform the operation into them.
+2. Space Complexity:- it means that how much memory will take it into the data.
+
+# How many data structures are there:-
+1. Array:- When it saves the data it gives the contiguous memory allocation and it saves the same 
+type of data.
+
+2. linkedlist:- It doesn't save contiguous memory allocation. It is a type of linear data structre, 
+and the linked list are linked using pointers
+
+3. stack:- Stack is a linear data structure that follows a particular order in which the operations are 
+performed. It follows the Last in First Out rule(LIFO) 
+
+4. Queue:- A Queue is a linear structure which follows a particular order in which the operations are 
+performed. The order is First In First Out (FIFO)
+
+5. Tree:- It means that elements have atmost 2 childrens that we call in the form of left and right.
+
+6. Graph:- It is a type non-liner data structure which consist of nodes and edges, where nodes can be 
+called as the vertices and edges are the lines that conect two nodes each other in graph. edges are called to be 
+lines or arcs.
+
+7. Hashing:- it means we can use like, if we have a large amount of data then we can can store into a table, 
+just like an array.
+
+
+

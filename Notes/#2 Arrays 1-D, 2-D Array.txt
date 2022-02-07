@@ -1,0 +1,10 @@
+ARRAYS:-
+
+
+Definition:-  
+1. Group of same type variables it means that variable be of int, float, double.
+eg:- student[5] = {30,74,34,5,6}
+2. Size of array in specified in advance.
+
+3. Each variable in array has an index value starting from 0.
+4. Contiguous memory allocation.

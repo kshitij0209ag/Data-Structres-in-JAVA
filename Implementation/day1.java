@@ -21,6 +21,8 @@ public class day1 {
             a[i] = sc.nextInt();
         }
 
+        // Inserting new Value into an array
+
         System.out.print("Enter Index of new Value to be Inserted");
         m = sc.nextInt();
         System.out.print("Enter new Value to be Inserted");

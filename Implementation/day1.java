@@ -1,12 +1,12 @@
-// Array Operations-Creation ,Traversal ,Insertion
+// Array Operations-Creation ,Traversal ,Insertion, Deletion
 
 import java.util.Scanner;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class day1 {
     public static void main(String args[]) {
-        int n,m,p;
+        int n;
+        int m;
+        // int p;
 
         // input the no. from user
 
@@ -28,8 +28,21 @@ public class day1 {
         System.out.print("Enter Index of new Value to be Deleted:- ");
         m = sc.nextInt();
 
+        for(int i = 0; i <a.length; i++){
+            if(i<m){
+                b[i] = a[i];
+            }
+            else if(i==m){
+                continue;
+            }
+            else{
+                b[i-1] = a[i];
+            }
+        }
 
-        // inserting a new value into an array
+
+        // // inserting a new value into an array
+
         // System.out.print("Enter new Value to be Inserted");
         // p = sc.nextInt();
         // for(int i = 0; i < n; i++){

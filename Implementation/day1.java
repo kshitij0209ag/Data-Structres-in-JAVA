@@ -15,33 +15,38 @@ public class day1 {
         n = sc.nextInt();
 
         int a[] = new int[n];
-        int b[] = new int[n+1];
+
+        // int b[] = new int[n+1];    for inserting the array
+        int b[] = new int[n-1];  // for deleting an array
 
         for(int i = 0; i<n; i++){
             a[i] = sc.nextInt();
         }
 
-        // Inserting new Value into an array
+        // delete an array from given input values
 
-        System.out.print("Enter Index of new Value to be Inserted");
+        System.out.print("Enter Index of new Value to be Deleted:- ");
         m = sc.nextInt();
-        System.out.print("Enter new Value to be Inserted");
-        p = sc.nextInt();
-        for(int i = 0; i < n+1; i++){
-            if(i<m){
-                b[i] = a[i];
-            }
-            else if(i==m){
-                b[i] = p;
-            }
-            else{
-                b[i] = a[i-1];
-            }
-        }
+
+
+        // inserting a new value into an array
+        // System.out.print("Enter new Value to be Inserted");
+        // p = sc.nextInt();
+        // for(int i = 0; i < n; i++){
+        //     if(i<m){
+        //         b[i] = a[i];
+        //     }
+        //     else if(i==m){
+        //         b[i] = p;
+        //     }
+        //     else{
+        //         b[i] = a[i-1];
+        //     }
+        // }
 
         // Implemetation of how to create array 
         System.out.print("Elements are: ");
-        for(int i = 0; i < n+1; i++){
+        for(int i = 0; i < n-1; i++){
             // creation array
             // System.out.println(a[i]);
             System.out.println(b[i]);

@@ -65,8 +65,5 @@ public class day1 {
             System.out.println(b[i]);
         }
     }
-
-
-
 }
 

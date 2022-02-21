@@ -78,7 +78,6 @@ public class day4 {
     }
 
     public static void main(String args[]) {
-
         day4 ll = new day4();
         ll.creation();
         ll.traverse();

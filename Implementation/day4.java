@@ -1,4 +1,4 @@
-// Single linked list - insertion(begining, end, specific loation)
+// Single Linked list - insertion(begining, end, specific loation)
 
 import java.util.Scanner;
 

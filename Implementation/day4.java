@@ -48,6 +48,15 @@ public class day4 {
                     break;
 
                     case 3:  // inserting at specified location
+                    int p;
+                    System.out.print("Enter the position to inserted: ");
+                    p = sc.nextInt();
+                    Node temp1 = head;
+                    for(int i = 0; i<(p-1); i++){
+                        temp1 = temp1.next;
+                    }
+                    new_node.next = temp1.next;
+                    temp1.next = new_node;
                     break;
                 }
             }

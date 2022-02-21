@@ -1,3 +1,5 @@
+// Single linked list (creation + travere)
+
 import java.util.Scanner;
 
 public class day3 {

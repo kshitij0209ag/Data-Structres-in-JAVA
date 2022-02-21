@@ -67,7 +67,46 @@ public class day5 {
     }
 
 
+    public void delete() {
+        int n, m, p, data;
+        Scanner sc1 = new Scanner(System.in);
+        do {
+            if(head == null){
+                System.out.print("Linked List is Empty");
 
+            }
+            else{
+                System.out.print("Enter 1 to delete at begining, 2 at end , 3 at specific location");
+                m = sc1.nextInt();
+                switch(m) {
+                    case 1:
+                    Node temp = head;
+                    temp = temp.next;
+                    head = temp;
+                    break;
+
+                    case 2:
+                    Node temp1 = head;
+                    Node ptr = temp1.next;
+                    while(ptr.next!= null){
+                        temp1 = ptr;
+                        ptr= ptr.next;
+                    }
+                    temp1.next = null;
+
+                    break;
+
+                    case 3:
+                    System.out.print("Enter position of node:");
+                    p = sc1.nextInt();
+                    break;
+                }
+            }
+            System.out.print("Do u want to add more data, then press :1");
+            n = sc1.nextInt();
+        }
+        while(n == 1);
+    }
 
     public void traverse() {
         Node temp = head;
@@ -85,6 +124,7 @@ public class day5 {
         day5 ll = new day5();
         ll.creation();
         ll.traverse();
+        ll.delete();
 
     }
 }

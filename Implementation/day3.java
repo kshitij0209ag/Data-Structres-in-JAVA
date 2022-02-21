@@ -46,7 +46,7 @@ public class day3 {
         }
         else{
             while(temp!=null){
-                System.out.print(temp.data);
+                System.out.print(temp.data + " ");
                 temp = temp.next;
             }
         }

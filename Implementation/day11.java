@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class day10 {
+public class day11 {
 
     // displaying how to create structure of Node , we make a class for Node
 
@@ -131,7 +131,7 @@ public class day10 {
 
     public static void main(String args[]) {
 
-        day10 ll = new day10();
+        day11 ll = new day11();
         ll.creation();
         ll.traverse();
 

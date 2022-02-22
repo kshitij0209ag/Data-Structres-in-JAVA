@@ -104,7 +104,7 @@ public class day8 {
                         p = sc1.nextInt();
                         Node temp2 = head;
                         Node ptr1 = temp2.next;
-                        for (int i = 0; i < (p - 1); i++) {
+                        for (int i = 1; i < (p - 1); i++) {
                             temp2 = ptr1;
                             ptr1 = ptr1.next;
                         }

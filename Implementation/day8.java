@@ -30,7 +30,9 @@ public class day8 {
 
             Node new_node = new Node(data);
             if (head == null) {
-                head = new_node; // 30 20 10
+                head = new_node;
+                tail = new_node;
+                new_node.next = head;
             } else {
                 System.out.print(
                         "Enter 1 to insert at begining, 2 for insertng at end, 3 for insert at specific location");
@@ -40,14 +42,13 @@ public class day8 {
                     case 1: // inserting at begining
                         new_node.next = head;
                         head = new_node;
+                        tail.next = head;
                         break;
 
                     case 2: /// inserting at end
-                        Node temp = head;
-                        while (temp.next != null) {
-                            temp = temp.next;
-                        }
-                        temp.next = new_node; // creating a node at the end
+                        tail.next = new_node;
+                        tail = new_node;
+                        new_node.next = head;
                         break;
 
                     case 3: // inserting at specified location

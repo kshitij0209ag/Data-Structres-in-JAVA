@@ -1,4 +1,4 @@
-// Circular linked list (creation + traverse)
+// Circular Linked list (creation + traverse)
 
 import java.util.Scanner;
 

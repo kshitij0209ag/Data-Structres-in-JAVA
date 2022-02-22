@@ -131,8 +131,9 @@ public class day8 {
     public static void main(String args[]) {
         day5 ll = new day5();
         ll.creation();
-        ll.traverse();
         ll.delete();
+        ll.traverse();
+        
 
     }
 }

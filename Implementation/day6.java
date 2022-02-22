@@ -15,8 +15,10 @@ public class day6 {
             this.next = null;
         }
     }
-
-    Node head = null;
+    
+    // 'tail' defines the last address of the node which connects to the starting head node
+    Node tail = null;
+    Node head= null;    
 
     // now we make how to create a node
     public void creation() {
@@ -28,7 +30,9 @@ public class day6 {
 
             Node new_node = new Node(data);
             if (head == null) {
-                head = new_node; // 30 20 10
+                head = new_node;      
+                tail = new_node;
+                new_node.next = head;
             } else {
                 new_node.next = head;
                 head = new_node;
@@ -43,7 +47,7 @@ public class day6 {
         if (head == null) {
             System.out.print("Linked list does not exist");
         } else {
-            while (temp != null) {
+            while (temp != head) {
                 System.out.print(temp.data + " ");
                 temp = temp.next;
             }

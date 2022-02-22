@@ -1,4 +1,4 @@
-// Doubly Linked list - insertion(begining, end, specific loation)
+// Doubly Linked list - Insertion(begining, end, specific loation)
 
 import java.util.Scanner;
 

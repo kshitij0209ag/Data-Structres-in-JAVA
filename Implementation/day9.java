@@ -1,22 +1,25 @@
-// Single linked list (creation + traverse)
+// Doubly linked list (creation + traverse)
 
 import java.util.Scanner;
 
-public class day3 {
+public class day9 {
 
     // displaying how to create structure of Node , we make a class for Node
 
     static class Node {
         int data;
         Node next;
+        Node prev;
 
         Node(int data) {
             this.data = data;
             this.next = null;
+            this.prev = null;
         }
     }
 
     Node head = null;
+    Node tail = null;
 
     // now we make how to create a node
     public void creation() {
@@ -29,7 +32,9 @@ public class day3 {
             Node new_node = new Node(data);
             if (head == null) {
                 head = new_node; // 30 20 10
+                tail = new_node;
             } else {
+                head.prev = new_node;
                 new_node.next = head;
                 head = new_node;
             }
@@ -52,7 +57,7 @@ public class day3 {
 
     public static void main(String args[]) {
 
-        day3 ll = new day3();
+        day9 ll = new day9();
         ll.creation();
         ll.traverse();
 

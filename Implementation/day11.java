@@ -87,16 +87,14 @@ public class day11 {
                         Node temp = head;
                         temp = temp.next;
                         head = temp;
+                        head.prev = null;
                         break;
 
                     case 2:
-                        Node temp1 = head;
-                        Node ptr = temp1.next;
-                        while (ptr.next != null) {
-                            temp1 = ptr;
-                            ptr = ptr.next;
-                        }
+                        Node temp1 = tail;
+                        temp1 = temp1.prev;
                         temp1.next = null;
+                        // tail = temp1;
                         break;
 
                     case 3:
@@ -104,11 +102,12 @@ public class day11 {
                         p = sc1.nextInt();
                         Node temp2 = head;
                         Node ptr1 = temp2.next;
-                        for (int i = 0; i < (p - 1); i++) {
+                        for (int i = 1; i < (p - 1); i++) {
                             temp2 = ptr1;
                             ptr1 = ptr1.next;
                         }
                         temp2.next = ptr1.next;
+                        ptr1.next.prev = temp2;
                         break;
                 }
             }

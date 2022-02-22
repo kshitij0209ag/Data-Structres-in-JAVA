@@ -31,6 +31,8 @@ public class day7 {
             Node new_node = new Node(data);
             if (head == null) {
                 head = new_node; // 30 20 10
+                tail = new_node;
+                new_node.next = head;
             } else {
                 System.out.print(
                         "Enter 1 to insert at begining, 2 for insertng at end, 3 for insert at specific location");
@@ -73,10 +75,11 @@ public class day7 {
         if (head == null) {
             System.out.print("Linked list does not exist");
         } else {
-            while (temp != null) {
+            do {
                 System.out.print(temp.data + " ");
                 temp = temp.next;
             }
+            while (temp != head);
         }
     }
 

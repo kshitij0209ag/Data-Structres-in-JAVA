@@ -1,4 +1,4 @@
-// Doubly linked list (creation + travere)
+// Circular linked list (creation + travere)
 
 import java.util.Scanner;
 
@@ -36,6 +36,7 @@ public class day6 {
             } else {
                 new_node.next = head;
                 head = new_node;
+                tail.next = head;
             }
             System.out.print("Do u want to add more data, then press :1");
             n = sc.nextInt();
@@ -47,10 +48,11 @@ public class day6 {
         if (head == null) {
             System.out.print("Linked list does not exist");
         } else {
-            while (temp != head) {
+            do {
                 System.out.print(temp.data + " ");
                 temp = temp.next;
             }
+            while (temp != head);
         }
     }
 

@@ -84,16 +84,18 @@ public class day8 {
                         Node temp = head;
                         temp = temp.next;
                         head = temp;
+                        tail.next = head;
                         break;
 
                     case 2:
                         Node temp1 = head;
                         Node ptr = temp1.next;
-                        while (ptr.next != null) {
+                        while (ptr.next != head) {
                             temp1 = ptr;
                             ptr = ptr.next;
                         }
-                        temp1.next = null;
+                        temp1.next = head;
+                        tail = temp1;
 
                         break;
 

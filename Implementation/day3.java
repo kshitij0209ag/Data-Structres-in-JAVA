@@ -1,4 +1,4 @@
-// Single linked list (creation + travere)
+// Single linked list (creation + traverse)
 
 import java.util.Scanner;
 

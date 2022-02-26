@@ -1,6 +1,6 @@
-import java.util.Scanner;
-
 //  Stack Using Array
+
+import java.util.Scanner;
 
 class stack {
     int top = -1;
@@ -60,7 +60,7 @@ public class day13 {
             {
                 case 1:
                 {
-                    s.push(sc);
+                    s.push();
                     break;
                 }
                 case 2:

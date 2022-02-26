@@ -1,4 +1,4 @@
-// Doubly linked list Deletion(Beginning, end, specific location)
+// Doubly linked list Deletion(Beginning, End, Specific Location)
 
 import java.util.Scanner;
 
